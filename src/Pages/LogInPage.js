@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import FormWrap from '../components/FormWrap'
 
-function LogInPage({ setUser }) {
+function LogInPage({ setUser, onLogIn }) {
   const [userSignin, setuserSignin] = useState('')
   const [signInPassword, setSignInPassword] = useState('')
   
@@ -17,12 +17,18 @@ function LogInPage({ setUser }) {
     }
   }
 
+  const handleLogIn = (resp) => {
+    setUser(resp[0])
+    onLogIn(true)
+    navigate('/')
+  }
+
 
   const HandleSubmit =(e) => {
     e.preventDefault()
     fetch(`http://localhost:3000/users/?name=${userSignin}`)
     .then(resp => resp.json())
-    .then(resp => (resp[0].password === signInPassword)? setUser(resp[0]) & navigate('/shop') : null )
+    .then(resp => (resp[0].password === signInPassword)? handleLogIn(resp) : null )
     .catch(error => console.log(error))
   }
 

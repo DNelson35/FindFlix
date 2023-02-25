@@ -2,9 +2,17 @@
   "users": [
     {
       "id": 1,
-      "name": "Test",
-      "password": "@TestPassword123"
+      "name": "test",
+      "password": "1"
     }
   ],
-  "products": []
+
+  "watchList": [
+    
+  ]
+
+
+
+
+  
 }
