@@ -1,0 +1,17 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Test",
+      "password": "@TestPassword123"
+    },
+    {
+      "name": "FelesiaStinks",
+      "admin": false,
+      "password": "isucknuts",
+      "cart": [],
+      "id": 2
+    }
+  ],
+  "products": []
+}
