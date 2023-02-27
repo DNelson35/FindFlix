@@ -5,20 +5,30 @@ import LogInPage from './Pages/LogInPage'
 import NavBar from './components/NavBar'
 import Hero from './Pages/Hero'
 import Home from './Pages/Home'
+import About from './Pages/About'
+import Contact from './Pages/Contact'
+import WatchList from './Pages/WatchList'
 
 
 function App() {
   const [user, setUser]= useState({})
   const [loggedIn, setLoggedIn] = useState(false)
+
+  const handleLogOut = () => {
+    setLoggedIn(false)
+  }
   
 
   return (
     <div>
       {loggedIn ? (
         <div>
-          <NavBar/>
+          <NavBar user={user} onLogOut={handleLogOut}/>
           <Routes>
             <Route path='/' element={<Home user={user}/>} />
+            <Route path='/watch' element={<WatchList user={user}/>} />
+            <Route path='/about' element={<About />} />
+            <Route path='/contact' element={<Contact />} />
           </Routes>
         </div>
       ) : (
@@ -30,10 +40,7 @@ function App() {
         </Routes> 
       ) 
       }
-      
     </div>
-    
-   
   )
 }
 

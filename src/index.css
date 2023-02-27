@@ -14,7 +14,7 @@
     }
 
     .loginBackground {
-        @apply bg-[url(https://images.unsplash.com/photo-1573209680076-bd7ec7007616?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80)] bg-cover bg-center w-full h-screen
+        @apply bg-[url(https://i.pinimg.com/originals/95/ea/f8/95eaf8f43b75d58122081002ebf31d61.jpg)] bg-cover bg-center w-full h-screen
     }
 }
 

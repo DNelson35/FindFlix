@@ -4,15 +4,21 @@
       "id": 1,
       "name": "test",
       "password": "1"
+    },
+    {
+      "name": "Damien",
+      "admin": false,
+      "password": "2",
+      "cart": [],
+      "id": 2
+    },
+    {
+      "name": "toni",
+      "admin": false,
+      "password": "3",
+      "cart": [],
+      "id": 3
     }
   ],
-
-  "watchList": [
-    
-  ]
-
-
-
-
-  
+  "watchList": []
 }
