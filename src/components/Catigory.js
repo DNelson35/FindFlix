@@ -1,7 +1,9 @@
 import React from 'react'
 import Card from './Card'
+import Modal from './Modal'
 
 function Catigory({ movies, title }) {
+  
 
     const renderedCards = movies.map(movie => <Card key={movie.id} movie={movie} />)
 

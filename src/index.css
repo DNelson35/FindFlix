@@ -12,9 +12,9 @@
     .formButton {
         @apply border rounded-md border-gray-600 bg-blue-500 text-white p-1 justify-between m-2 hover:bg-blue-700 active:bg-blue-900
     }
-
+    /* TODO edit background style */
     .loginBackground {
-        @apply bg-[url(https://i.pinimg.com/originals/95/ea/f8/95eaf8f43b75d58122081002ebf31d61.jpg)] bg-cover bg-center w-full h-screen
+        @apply bg-zinc-900 bg-cover bg-center w-full h-screen
     }
 }
 

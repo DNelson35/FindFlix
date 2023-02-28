@@ -1,24 +1,22 @@
 {
-  "users": [
+ 
+  "watchLists": [
     {
       "id": 1,
-      "name": "test",
-      "password": "1"
-    },
-    {
-      "name": "Damien",
-      "admin": false,
-      "password": "2",
-      "cart": [],
-      "id": 2
-    },
-    {
-      "name": "toni",
-      "admin": false,
-      "password": "3",
-      "cart": [],
-      "id": 3
+      "author": "",
+      "label": "action movies"
+
     }
   ],
-  "watchList": []
+
+  "movies" : [
+    {
+      "id": 1,
+      "title": "the Matrix",
+      "posterUrl": "",
+      "watchlist_ID": 1
+    }
+  ]
+
 }
+
