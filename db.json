@@ -1,22 +1,40 @@
 {
- 
   "watchLists": [
     {
       "id": 1,
-      "author": "",
+      "author": "timmy",
       "label": "action movies"
-
+    },
+    {
+      "author": "Damien",
+      "label": "adventure filx",
+      "id": 2
+    },
+    {
+      "author": "sam",
+      "label": "adventure time",
+      "id": 3
     }
+    
   ],
-
-  "movies" : [
+  "movies": [
     {
       "id": 1,
       "title": "the Matrix",
       "posterUrl": "",
       "watchlist_ID": 1
+    },
+    {
+      "id": 3,
+      "title": "the Matrix",
+      "posterUrl": "",
+      "watchlist_ID": 3
+    },
+    {
+      "id": 2,
+      "title": "docter Evil",
+      "posterUrl": "",
+      "watchlist_ID": 2
     }
   ]
-
 }
-
