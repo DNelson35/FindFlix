@@ -1,7 +1,7 @@
 import React from 'react'
 import useListContext from '../Hooks/useListContext'
 
-function Modal({movie, onClose}) {
+function Modal({movie, onClose, title}) {
 
   const { currList, setMovieList, movieList } = useListContext()
 
@@ -29,6 +29,19 @@ function Modal({movie, onClose}) {
     onClose()
   }
 
+  const handleRemoveButton = () => {
+    if(currList?.id){
+      fetch('http://localhost:3000/movies', {
+        method: 'DELETE',
+        headers: {
+          'content-type': 'application/json',
+        },
+      })
+      .then(resp => resp.json())
+      .then(resp => setMovieList(movieList.filter(movie => movie.id !== resp.id)))
+    }
+  }
+
   
   return (
     <div className='fixed top-0 left-0 right-0 z-50 bg-gray-800/50 h-screen w-full flex justify-center items-center'>
@@ -39,7 +52,7 @@ function Modal({movie, onClose}) {
         </div>
         <p className='px-10'>{movie.overview}</p>
         <div className='flex h-auto w-full justify-between pt-4 px-10'>
-          <button className='formButton' onClick={handleAddbtn}>Add</button>
+          {(title === 'collection')?<button className='formButton' onClick={handleRemoveButton}>Remove</button> : <button className='formButton' onClick={handleAddbtn}>Add</button>}
           <button className='formButton bg-red-600' onClick={onClose}>close</button>
         </div>
       </div>

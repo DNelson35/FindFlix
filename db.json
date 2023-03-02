@@ -46,6 +46,36 @@
       "poster_path": "/sv1xJUazXeYqALzczSZ3O6nkH75.jpg",
       "watchlist_ID": 2,
       "id": 5
+    },
+    {
+      "title": "Nocebo",
+      "poster_path": "/3FPnDTlX0LsaU4VD5mc82BMbchA.jpg",
+      "watchlist_ID": 2,
+      "id": 6
+    },
+    {
+      "title": "The Super Mario Bros. Movie",
+      "poster_path": "/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg",
+      "watchlist_ID": 2,
+      "id": 7
+    },
+    {
+      "title": "Nocebo",
+      "poster_path": "/3FPnDTlX0LsaU4VD5mc82BMbchA.jpg",
+      "watchlist_ID": 3,
+      "id": 8
+    },
+    {
+      "title": "We Have a Ghost",
+      "poster_path": "/xo0fgAUoEeVQ7KsKeMWypyglvnf.jpg",
+      "watchlist_ID": 3,
+      "id": 9
+    },
+    {
+      "title": "Puss in Boots: The Last Wish",
+      "poster_path": "/kuf6dutpsT0vSVehic3EZIqkOBt.jpg",
+      "watchlist_ID": 1,
+      "id": 10
     }
   ]
 }
