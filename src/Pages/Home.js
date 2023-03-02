@@ -12,7 +12,7 @@ function Home() {
 
   const {trending, topRated, newMovies, upcomingMovies} = useFetchData()
   
-  console.log(movieList.length > 1)
+  
   return (
     <div>
       {(movieList.length > 1) && <Catigory movies={movieList} title="collection" />}
