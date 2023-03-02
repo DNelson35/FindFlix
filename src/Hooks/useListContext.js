@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { listContext } from '../Context/listContext'
 
 function useListContext() {

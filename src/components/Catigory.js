@@ -1,11 +1,22 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Card from './Card'
 import Modal from './Modal'
 
 function Catigory({ movies, title }) {
-  
+  const [selectedMovie, setSelectedMovie] = useState()
+  const [isOpen, setIsOpen] = useState(false)
 
-    const renderedCards = movies.map(movie => <Card key={movie.id} movie={movie} />)
+
+  const handleSelectedMovie = (movie) => {
+    setSelectedMovie(movie)
+    setIsOpen(true)
+  }
+
+  const handleClose = () => {
+    setIsOpen(false)
+  }
+
+    const renderedCards = movies.map(movie => <Card key={movie.id} movie={movie} onSelect={handleSelectedMovie} />)
 
   return (
 
@@ -14,6 +25,7 @@ function Catigory({ movies, title }) {
         
         <div className='flex flex-no-wrap overflow-x-scroll'>
             {renderedCards}
+            {isOpen && <Modal movie={selectedMovie} onClose={handleClose} />}
         </div>
     </div>
   )

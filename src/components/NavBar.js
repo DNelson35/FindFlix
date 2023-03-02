@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import useListContext from '../Hooks/useListContext'
 
@@ -7,16 +7,16 @@ function NavBar() {
 
   const [selected, setSelected] = useState(``)
 
-  const [ authorLists, onSelect ] = useListContext()
+  const { watchList, handleSelectedList, } = useListContext()
 
-  const authorOptions = authorLists.map(author => <option key={author.id}>{author.author}: {author.label}</option> )
+  const authorOptions = watchList.map(author => <option key={author.id}>{author.author}: {author.label}</option> )
 
   const handleChange = (e) => {
-    const selectedAuthorList = authorLists.find(
+    const selectedAuthorList = watchList.find(
       (author) => `${author.author}: ${author.label}` === e.target.value
     );
     setSelected(e.target.value);
-    onSelect(selectedAuthorList);
+    handleSelectedList(selectedAuthorList);
   };
 
 
