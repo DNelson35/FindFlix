@@ -18,34 +18,10 @@
   ],
   "movies": [
     {
-      "title": "A Man Called Otto",
-      "poster_path": "/130H1gap9lFfiTF9iDrqNIkFvC9.jpg",
-      "watchlist_ID": 2,
-      "id": 1
-    },
-    {
-      "title": "Magic Mike's Last Dance",
-      "poster_path": "/bTKyjTlD8qJOiRkHZoSOx5D1KWg.jpg",
-      "watchlist_ID": 2,
-      "id": 2
-    },
-    {
       "title": "Knock at the Cabin",
       "poster_path": "/dm06L9pxDOL9jNSK4Cb6y139rrG.jpg",
       "watchlist_ID": 1,
       "id": 3
-    },
-    {
-      "title": "Die Hart",
-      "poster_path": "/1EnBjTJ5utgT1OXYBZ8YwByRCzP.jpg",
-      "watchlist_ID": 1,
-      "id": 4
-    },
-    {
-      "title": "Black Panther: Wakanda Forever",
-      "poster_path": "/sv1xJUazXeYqALzczSZ3O6nkH75.jpg",
-      "watchlist_ID": 2,
-      "id": 5
     },
     {
       "title": "Nocebo",
@@ -72,9 +48,9 @@
       "id": 9
     },
     {
-      "title": "Puss in Boots: The Last Wish",
-      "poster_path": "/kuf6dutpsT0vSVehic3EZIqkOBt.jpg",
-      "watchlist_ID": 1,
+      "title": "Magic Mike's Last Dance",
+      "poster_path": "/5C9rerMqV1X0jnRdbbsM1BswVI2.jpg",
+      "watchlist_ID": 2,
       "id": 10
     }
   ]

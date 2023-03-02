@@ -12,6 +12,7 @@ function Home() {
 
   const {trending, topRated, newMovies, upcomingMovies} = useFetchData()
   
+  console.log(movieList)
   
   return (
     <div>

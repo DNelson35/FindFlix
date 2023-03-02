@@ -31,14 +31,10 @@ function Modal({movie, onClose, title}) {
 
   const handleRemoveButton = () => {
     if(currList?.id){
-      fetch('http://localhost:3000/movies', {
+      fetch(`http://localhost:3000/movies/${movie.id}`, {
         method: 'DELETE',
-        headers: {
-          'content-type': 'application/json',
-        },
       })
-      .then(resp => resp.json())
-      .then(resp => setMovieList(movieList.filter(movie => movie.id !== resp.id)))
+      .then(setMovieList(movieList.filter(currMovie => movie.id !== currMovie.id)))
     }
   }
 

@@ -9,25 +9,27 @@ function useFetchData() {
     const [newMovies, setNewMovies] = useState([])
     const [upcomingMovies, setUpcomingMovies] = useState([])
 
-  
-  console.log(API_KEY)
-
     useEffect(() => {
+      Promise.all([
         fetch(`https://api.themoviedb.org/3/trending/movie/day?api_key=${API_KEY}`)
-        .then(resp => resp.json())
-        .then(resp => setTrending(resp.results))
+        .then(resp => resp.json()),
 
         fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}`)
-        .then(resp => resp.json())
-        .then(resp => setTopRated(resp.results))
+        .then(resp => resp.json()),
         
         fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${API_KEY}&language=en-US&page=1`)
-        .then(resp => resp.json())
-        .then(resp => setNewMovies(resp.results))
-        
+        .then(resp => resp.json()),
+  
         fetch(`https://api.themoviedb.org/3/movie/upcoming?api_key=${API_KEY}&language=en-US&page=1`)
         .then(resp => resp.json())
-        .then(resp => setUpcomingMovies(resp.results))
+
+      ])
+      .then(([trending, topRated, newMovies, upcoming]) => {
+        setTrending(trending.results)
+        setTopRated(topRated.results)
+        setNewMovies(newMovies.results)
+        setUpcomingMovies(upcoming.results)
+      })
 
     }, [API_KEY])
 
