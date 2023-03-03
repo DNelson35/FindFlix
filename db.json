@@ -18,40 +18,16 @@
   ],
   "movies": [
     {
-      "title": "Knock at the Cabin",
-      "poster_path": "/dm06L9pxDOL9jNSK4Cb6y139rrG.jpg",
-      "watchlist_ID": 1,
-      "id": 3
-    },
-    {
       "title": "Nocebo",
       "poster_path": "/3FPnDTlX0LsaU4VD5mc82BMbchA.jpg",
       "watchlist_ID": 2,
       "id": 6
     },
     {
-      "title": "The Super Mario Bros. Movie",
-      "poster_path": "/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg",
+      "title": "Tonight You're Sleeping with Me",
+      "poster_path": "/sexnKxpAOl0wfixYC3RataZD4pI.jpg",
       "watchlist_ID": 2,
       "id": 7
-    },
-    {
-      "title": "Nocebo",
-      "poster_path": "/3FPnDTlX0LsaU4VD5mc82BMbchA.jpg",
-      "watchlist_ID": 3,
-      "id": 8
-    },
-    {
-      "title": "We Have a Ghost",
-      "poster_path": "/xo0fgAUoEeVQ7KsKeMWypyglvnf.jpg",
-      "watchlist_ID": 3,
-      "id": 9
-    },
-    {
-      "title": "Magic Mike's Last Dance",
-      "poster_path": "/5C9rerMqV1X0jnRdbbsM1BswVI2.jpg",
-      "watchlist_ID": 2,
-      "id": 10
     }
   ]
 }

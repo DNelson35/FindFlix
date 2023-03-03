@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Card from './Card'
 import Modal from './Modal'
 
-function Catigory({ movies, title }) {
+function Category({ movies, title }) {
   const [selectedMovie, setSelectedMovie] = useState()
   const [isOpen, setIsOpen] = useState(false)
 
@@ -30,4 +30,4 @@ function Catigory({ movies, title }) {
   )
 }
 
-export default Catigory
+export default Category
