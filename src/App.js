@@ -4,6 +4,7 @@ import NavBar from './components/NavBar'
 import Home from './Pages/Home'
 import About from './Pages/About'
 import AddWatchList from './Pages/AddWatchList'
+import UpdateWatchList from './Pages/UpdateWatchList'
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/create' element={<AddWatchList />} />
-        <Route path='/edit' element={<AddWatchList />} />
+        <Route path='/edit' element={<UpdateWatchList />} />
         <Route path='/about' element={<About />} />
       </Routes>
     </div>
