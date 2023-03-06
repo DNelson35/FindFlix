@@ -3,14 +3,14 @@ import useListContext from '../Hooks/useListContext'
 
 function Modal({movie, onClose, title}) {
 
-  const { currList, setMovieList, movieList } = useListContext()
+  const { currList, setMovies, movies } = useListContext()
 
   const posterUrl = `https://image.tmdb.org/t/p/w500${movie.poster_path}`
 
   // TODO: if time allowes switch form alert to a screen notification
 
   const handleAddbtn = () => {
-    if(currList?.id){
+    if(currList){
       fetch(' http://localhost:3000/movies', {
         method: 'POST',
         headers: {
@@ -20,11 +20,11 @@ function Modal({movie, onClose, title}) {
           title: movie.title,
           poster_path: movie.poster_path,
           overview: movie.overview,
-          watchlist_ID: currList.id
+          watchlist_ID: parseInt(currList)
         })
       })
       .then(resp => resp.json())
-      .then(resp => setMovieList([...movieList, resp]))
+      .then(resp => setMovies([...movies, resp]))
       .then(alert('Added to collection'))
     }else{
       alert('select a collection')
@@ -33,11 +33,11 @@ function Modal({movie, onClose, title}) {
   }
 
   const handleRemoveButton = () => {
-    if(currList?.id){
+    if(currList){
       fetch(`http://localhost:3000/movies/${movie.id}`, {
         method: 'DELETE',
       })
-      .then(setMovieList(movieList.filter(currMovie => movie.id !== currMovie.id)))
+      .then(setMovies(movies.filter(currMovie => movie.id !== currMovie.id)))
     }
     onClose()
   }

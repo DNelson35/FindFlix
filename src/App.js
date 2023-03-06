@@ -9,9 +9,9 @@ import UpdateWatchList from './Pages/UpdateWatchList'
 
 function App() {
 
-  // TODO: add new routes for updating the movie list. most likely add the remove feture directly in the card
 
-  // TODO: add new routes for Creating a watchList or update the existing routes
+  // TODO: add the remove feture directly in the card
+  
   return (
     <div>
       <NavBar />

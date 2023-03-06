@@ -3,21 +3,26 @@ import React, {createContext, useEffect, useState} from 'react'
   const  listContext = createContext() 
 // GET /posts?title=json-server&author=typicode
 function Provider({ children }) {
-    const [movieList, setMovieList] = useState([])
-    const [watchList, setWatchList] = useState([])
-    const [currList, setCurrList] = useState({})
+    const [movies, setMovies] = useState([])
+    const [watchLists, setWatchLists] = useState([])
+    const [currList, setCurrList] = useState('')
+    
 
     useEffect(()=> {
         fetch('http://localhost:3000/watchLists')
         .then(resp => resp.json())
-        .then(resp => setWatchList(resp))
+        .then(watchLists => setWatchLists(watchLists))
     }, [])
     
 
     useEffect(() => {
-      fetch(`http://localhost:3000/movies?watchlist_ID=${currList.id}`)
+      if(!currList){
+        setMovies([])
+        return
+      }
+      fetch(`http://localhost:3000/movies?watchlist_ID=${currList}`)
         .then(resp => resp.json())
-        .then(resp => setMovieList(resp))
+        .then(movies => setMovies(movies))
     }, [currList])
 
 
@@ -26,7 +31,7 @@ function Provider({ children }) {
     }
 
   return (
-    <listContext.Provider value={{ watchList, setWatchList, handleSelectedList, currList, movieList, setMovieList }}>
+    <listContext.Provider value={{ watchLists, setWatchLists, handleSelectedList, currList, setCurrList, movies, setMovies }}>
         {children}
     </listContext.Provider>
   )

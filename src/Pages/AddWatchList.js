@@ -6,7 +6,7 @@ import useListContext from '../Hooks/useListContext'
 function AddWatchList() {
 
   const navigate = useNavigate()
-  const { watchList, setWatchList,} = useListContext()
+  const { watchLists, setWatchLists,} = useListContext()
   const [formInput, setFormInput] = useState({
     author: '',
     listName: ''
@@ -30,7 +30,7 @@ function AddWatchList() {
         })
       })
       .then(resp => resp.json())
-      .then(resp => setWatchList([...watchList, resp]))
+      .then(resp => setWatchLists([...watchLists, resp]))
       setFormInput({
         author: '',
         listName: ''

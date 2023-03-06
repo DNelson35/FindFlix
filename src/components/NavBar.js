@@ -1,26 +1,16 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { NavLink } from 'react-router-dom'
 import useListContext from '../Hooks/useListContext'
 
 
 function NavBar() {
 
-  const [selected, setSelected] = useState(``)
+  const { watchLists, handleSelectedList, currList } = useListContext()
 
-  const { watchList, handleSelectedList, } = useListContext()
-
-  const authorOptions = watchList.map(author => <option key={author.id}>{author.author}: {author.label}</option> )
-
+  const WatchListOptions = watchLists.map(watchList => <option key={watchList.id} value={watchList.id}>{watchList.author}: {watchList.label}</option> )
+// TODO: rename to on selected
   const handleChange = (e) => {
-    if(!e.target.value){
-      setSelected(e.target.value)
-    } else{
-      const selectedAuthorList = watchList.find(
-        (author) => `${author.author}: ${author.label}` === e.target.value
-      );
-      setSelected(e.target.value);
-      handleSelectedList(selectedAuthorList);
-    }
+    handleSelectedList(e.target.value)
   };
 
 
@@ -38,9 +28,9 @@ function NavBar() {
         <div className='flex  justify-end w-full h-auto pr-4 '>
           <form>
             <label className='text-white pr-4'>Collections</label>
-            <select value={selected} onChange={handleChange}>
+            <select value={currList} onChange={handleChange}>
               <option value='' default >Pick a Collection</option>
-              {authorOptions}
+              {WatchListOptions}
             </select>
           </form>
         </div>

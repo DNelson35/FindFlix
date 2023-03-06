@@ -8,14 +8,14 @@ import useListContext from '../Hooks/useListContext'
 
 function Home() {
 
-  const { movieList } = useListContext()
+  const { movies } = useListContext()
 
   const {trending, topRated, newMovies, upcomingMovies, isLoading} = useFetchData()
   
   return (
     isLoading? <div><h1>Loading......</h1></div> :
     <div>
-      {(movieList.length > 0) && <Category movies={movieList} title="collection" />}
+      {(movies.length > 0) && <Category movies={movies} title="collection" />}
       <Category movies={trending} title='Trending Today'/>
       <Category movies={topRated} title='Top Rated' />
       <Category movies={newMovies} title='New Movies'/>
