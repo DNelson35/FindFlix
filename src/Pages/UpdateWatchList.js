@@ -80,8 +80,10 @@ function UpdateWatchList() {
         <input required type='text' className="formInput" name='author' value={formInput.author} onChange={handleFormInput} />
         <label className="formLabel">List Name</label>
         <input required type="text" className="formInput" name='label' value={formInput.label} onChange={handleFormInput} />
-        <button type='submit' className='formButton m-2' onClick={handleUpdateBtn}>Update</button>
-        <button type='submit' className='formButton bg-red-500 m-2' onClick={handleDeleteBtn}>Delete</button>
+        <div className='flex justify-between'>
+          <button type='submit' className='formButton m-2' onClick={handleUpdateBtn}>Update</button>
+          <button type='submit' className='formButton bg-red-500 m-2' onClick={handleDeleteBtn}>Delete</button>
+        </div>
     </form>
   </FormWrap>
   </div>

@@ -47,7 +47,9 @@ function AddWatchList() {
           <input required type='text' className="formInput" name='author' value={formInput.author} onChange={handleFormInput} />
           <label className="formLabel">List Name</label>
           <input required type="text" className="formInput" name='listName' value={formInput.listName} onChange={handleFormInput} />
-          <button type='submit' className='formButton m-2'>Create</button>
+          <div className='flex w-full justify-center'>
+            <button type='submit' className='formButton m-2'>Create</button>
+          </div>
       </form>
     </FormWrap>
     </div>
