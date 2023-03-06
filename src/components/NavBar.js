@@ -12,11 +12,15 @@ function NavBar() {
   const authorOptions = watchList.map(author => <option key={author.id}>{author.author}: {author.label}</option> )
 
   const handleChange = (e) => {
-    const selectedAuthorList = watchList.find(
-      (author) => `${author.author}: ${author.label}` === e.target.value
-    );
-    setSelected(e.target.value);
-    handleSelectedList(selectedAuthorList);
+    if(!e.target.value){
+      setSelected(e.target.value)
+    } else{
+      const selectedAuthorList = watchList.find(
+        (author) => `${author.author}: ${author.label}` === e.target.value
+      );
+      setSelected(e.target.value);
+      handleSelectedList(selectedAuthorList);
+    }
   };
 
 
@@ -28,7 +32,6 @@ function NavBar() {
         <NavLink to='/' className='text-gray-300/90 pr-10' >Home</NavLink>
         <NavLink to='/watch' className='text-gray-300/90 pr-10'>Create List</NavLink>
         <NavLink to='/about' className='text-gray-300/90 pr-10'>About</NavLink>
-        <NavLink to='/contact' className='text-gray-300/90 pr-4'>Contact</NavLink>
         <div className='flex  justify-end w-full h-auto pr-4 '>
           <form>
             <label className='text-white pr-4'>Collections</label>

@@ -4,30 +4,14 @@
       "id": 1,
       "author": "timmy",
       "label": "action movies"
-    },
-    {
-      "author": "Damien",
-      "label": "adventure filx",
-      "id": 2
-    },
-    {
-      "author": "sam",
-      "label": "adventure time",
-      "id": 3
     }
   ],
   "movies": [
     {
-      "title": "Nocebo",
-      "poster_path": "/3FPnDTlX0LsaU4VD5mc82BMbchA.jpg",
-      "watchlist_ID": 2,
-      "id": 6
-    },
-    {
-      "title": "Tonight You're Sleeping with Me",
-      "poster_path": "/sexnKxpAOl0wfixYC3RataZD4pI.jpg",
-      "watchlist_ID": 2,
-      "id": 7
+      "title": "A Man Called Otto",
+      "poster_path": "/130H1gap9lFfiTF9iDrqNIkFvC9.jpg",
+      "watchlist_ID": 1,
+      "id": 1
     }
   ]
 }

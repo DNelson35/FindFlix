@@ -10,11 +10,10 @@ function Home() {
 
   const { movieList } = useListContext()
 
-  const {trending, topRated, newMovies, upcomingMovies} = useFetchData()
-
-  console.log(movieList)
+  const {trending, topRated, newMovies, upcomingMovies, isLoading} = useFetchData()
   
   return (
+    isLoading? <div><h1>Loading......</h1></div> :
     <div>
       {(movieList.length > 0) && <Category movies={movieList} title="collection" />}
       <Category movies={trending} title='Trending Today'/>

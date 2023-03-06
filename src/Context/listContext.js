@@ -26,7 +26,7 @@ function Provider({ children }) {
     }
 
   return (
-    <listContext.Provider value={{ watchList, handleSelectedList, currList, movieList, setMovieList }}>
+    <listContext.Provider value={{ watchList, setWatchList, handleSelectedList, currList, movieList, setMovieList }}>
         {children}
     </listContext.Provider>
   )
