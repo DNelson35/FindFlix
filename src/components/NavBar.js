@@ -30,7 +30,10 @@ function NavBar() {
       <nav className='flex items-center pl-6 w-full truncate'>
         <h1 className='text-white pr-6 text-2xl'>Find<span className='text-red-600'>Flix</span></h1>
         <NavLink to='/' className='text-gray-300/90 pr-10' >Home</NavLink>
-        <NavLink to='/watch' className='text-gray-300/90 pr-10'>Create List</NavLink>
+        <NavLink to='/create' className='text-gray-300/90 pr-10'>Create List</NavLink>
+        <NavLink to='/edit' className='text-gray-300/90 pr-10' >
+          Update List
+        </NavLink>
         <NavLink to='/about' className='text-gray-300/90 pr-10'>About</NavLink>
         <div className='flex  justify-end w-full h-auto pr-4 '>
           <form>

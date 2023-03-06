@@ -12,7 +12,6 @@ function UpdateWatchList() {
       listName: ''
     })
     
-    // TODO: figure out how to access the current watch list to get its id.
     const handleFormInput = (e) => {
       setFormInput({...formInput, [e.target.name]: e.target.value})
     }

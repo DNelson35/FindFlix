@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import NavBar from './components/NavBar'
 import Home from './Pages/Home'
 import About from './Pages/About'
-import WatchList from './Pages/AddWatchList'
+import AddWatchList from './Pages/AddWatchList'
 
 
 function App() {
@@ -16,7 +16,8 @@ function App() {
       <NavBar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/watch' element={<WatchList />} />
+        <Route path='/create' element={<AddWatchList />} />
+        <Route path='/edit' element={<AddWatchList />} />
         <Route path='/about' element={<About />} />
       </Routes>
     </div>

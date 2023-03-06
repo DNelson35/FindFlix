@@ -7,6 +7,8 @@ function Modal({movie, onClose, title}) {
 
   const posterUrl = `https://image.tmdb.org/t/p/w500${movie.poster_path}`
 
+  // TODO: if time allowes switch form alert to a screen notification
+
   const handleAddbtn = () => {
     if(currList?.id){
       fetch(' http://localhost:3000/movies', {
@@ -17,6 +19,7 @@ function Modal({movie, onClose, title}) {
         body: JSON.stringify({
           title: movie.title,
           poster_path: movie.poster_path,
+          overview: movie.overview,
           watchlist_ID: currList.id
         })
       })
@@ -36,6 +39,7 @@ function Modal({movie, onClose, title}) {
       })
       .then(setMovieList(movieList.filter(currMovie => movie.id !== currMovie.id)))
     }
+    onClose()
   }
 
   
