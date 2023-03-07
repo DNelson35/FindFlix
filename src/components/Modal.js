@@ -7,6 +7,7 @@ function Modal({movie, onClose, title}) {
 
   const posterUrl = `https://image.tmdb.org/t/p/w500${movie.poster_path}`
 
+
   // TODO: if time allowes switch form alert to a screen notification
 
   const handleAddbtn = () => {
@@ -25,9 +26,8 @@ function Modal({movie, onClose, title}) {
       })
       .then(resp => resp.json())
       .then(resp => setMovies([...movies, resp]))
-      .then(alert('Added to collection'))
-    }else{
-      alert('select a collection')
+    } else {
+      alert('pick a collection')
     }
     onClose()
   }
@@ -45,6 +45,7 @@ function Modal({movie, onClose, title}) {
   
   return (
     <div className='fixed top-0 left-0 right-0 z-50 bg-gray-800/50 h-screen w-full flex justify-center items-center'>
+      
       <div className='grid bg-zinc-800 h-auto w-1/2 min-h-96 min-w-[400px] text-white place-items-center rounded-xl px-5 py-5'>
         <div className='h-auto w-1/2 text-center pb-4'>
           <img src={posterUrl} alt={movie.title} className='relative h-full w-full pb-2'/>

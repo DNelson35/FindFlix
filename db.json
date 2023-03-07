@@ -1,4 +1,72 @@
 {
-  "watchLists": [],
-  "movies": []
+  "watchLists": [
+    {
+      "author": "Damien",
+      "label": "movies",
+      "id": 1
+    },
+    {
+      "author": "james bond",
+      "label": "romance ",
+      "id": 2
+    }
+  ],
+  "movies": [
+    {
+      "title": "The Shawshank Redemption",
+      "poster_path": "/hBcY0fE9pfXzvVaY4GKarweriG2.jpg",
+      "overview": "Framed in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
+      "watchlist_ID": 1,
+      "id": 1
+    },
+    {
+      "title": "Creed III",
+      "poster_path": "/cvsXj3I9Q2iyyIo95AecSd1tad7.jpg",
+      "overview": "After dominating the boxing world, Adonis Creed has been thriving in both his career and family life. When a childhood friend and former boxing prodigy, Damien Anderson, resurfaces after serving a long sentence in prison, he is eager to prove that he deserves his shot in the ring. The face-off between former friends is more than just a fight. To settle the score, Adonis must put his future on the line to battle Damien - a fighter who has nothing to lose.",
+      "watchlist_ID": 1,
+      "id": 4
+    },
+    {
+      "title": "Sayen",
+      "poster_path": "/aCy61aU7BMG7SfhkaAaasS0KzUO.jpg",
+      "overview": "Sayen is hunting down the men who murdered her grandmother. Using her training and knowledge of nature, she is able to turn the tables on them, learning of a conspiracy from a corporation that threatens her people's ancestral lands.",
+      "watchlist_ID": 1,
+      "id": 5
+    },
+    {
+      "title": "Black Panther: Wakanda Forever",
+      "poster_path": "/sv1xJUazXeYqALzczSZ3O6nkH75.jpg",
+      "overview": "Queen Ramonda, Shuri, M’Baku, Okoye and the Dora Milaje fight to protect their nation from intervening world powers in the wake of King T’Challa’s death.  As the Wakandans strive to embrace their next chapter, the heroes must band together with the help of War Dog Nakia and Everett Ross and forge a new path for the kingdom of Wakanda.",
+      "watchlist_ID": 1,
+      "id": 7
+    },
+    {
+      "title": "Spirited Away",
+      "poster_path": "/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
+      "overview": "A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.",
+      "watchlist_ID": 2,
+      "id": 8
+    },
+    {
+      "title": "The Whale",
+      "poster_path": "/jQ0gylJMxWSL490sy0RrPj1Lj7e.jpg",
+      "overview": "A reclusive English teacher suffering from severe obesity attempts to reconnect with his estranged teenage daughter for one last chance at redemption.",
+      "watchlist_ID": 2,
+      "id": 9
+    },
+    {
+      "title": "Magic Mike's Last Dance",
+      "poster_path": "/5C9rerMqV1X0jnRdbbsM1BswVI2.jpg",
+      "overview": "Mike Lane takes to the stage again after a lengthy hiatus, following a business deal that went bust, leaving him broke and taking bartender gigs in Florida. For what he hopes will be one last hurrah, Mike heads to London with a wealthy socialite who lures him with an offer he can’t refuse… and an agenda all her own. With everything on the line, once Mike discovers what she truly has in mind, will he—and the roster of hot new dancers he’ll have to whip into shape—be able to pull it off?",
+      "watchlist_ID": 2,
+      "id": 10
+    },
+    {
+      "title": "Love at First Kiss",
+      "poster_path": "/jefnbOGaDQTwY3dATmaiIuNwARs.jpg",
+      "overview": "The story of Javier who, at the age of 16, while kissing a girl for the first time, realized that he had a gift of romantic clairvoyance. Javier can see the future... and he finally knows who the love of his life is.",
+      "watchlist_ID": 2,
+      "id": 11
+    }
+  ]
 }

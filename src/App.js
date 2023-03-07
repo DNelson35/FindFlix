@@ -8,9 +8,6 @@ import UpdateWatchList from './Pages/UpdateWatchList'
 
 
 function App() {
-
-
-  // TODO: add the remove feture directly in the card
   
   return (
     <div>

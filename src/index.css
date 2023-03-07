@@ -12,7 +12,6 @@
     .formButton {
         @apply border rounded-md border-gray-600 bg-blue-500 text-white p-1 justify-between m-2 hover:bg-blue-700 active:bg-blue-900
     }
-    /* TODO edit background style */
     .loginBackground {
         @apply bg-zinc-900 bg-cover bg-center w-full h-screen
     }

@@ -12,7 +12,6 @@ function AddWatchList() {
     listName: ''
   })
   
-  // TODO: figure out how watchlist is updated on submit?
   const handleFormInput = (e) => {
     setFormInput({...formInput, [e.target.name]: e.target.value})
   }
