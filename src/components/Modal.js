@@ -7,9 +7,6 @@ function Modal({movie, onClose, title}) {
 
   const posterUrl = `https://image.tmdb.org/t/p/w500${movie.poster_path}`
 
-
-  // TODO: if time allowes switch form alert to a screen notification
-
   const handleAddbtn = () => {
     if(currList){
       fetch(' http://localhost:3000/movies', {

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
-// import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import FormWrap from '../components/FormWrap'
 import useListContext from '../Hooks/useListContext'
 
 
 function UpdateWatchList() {
-    // const navigate = useNavigate()
+    const navigate = useNavigate()
     const { currList, watchLists, setWatchLists,movies, setMovies} = useListContext()
 
     const [formInput, setFormInput] = useState({
@@ -46,8 +46,8 @@ function UpdateWatchList() {
        }
        return watchList
       })))
+      .then(navigate('/'))
     }
-    console.log(movies)
 
     const handleDeleteBtn = () => {
       movies.forEach(movie => {
@@ -65,6 +65,7 @@ function UpdateWatchList() {
         label: '',
       }))
       
+      navigate('/')
       setMovies([])
     }
   

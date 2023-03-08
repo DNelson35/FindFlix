@@ -2,13 +2,8 @@
   "watchLists": [
     {
       "author": "Damien",
-      "label": "movies",
+      "label": "new  movie",
       "id": 1
-    },
-    {
-      "author": "james bond",
-      "label": "romance ",
-      "id": 2
     }
   ],
   "movies": [
@@ -39,34 +34,6 @@
       "overview": "Queen Ramonda, Shuri, M’Baku, Okoye and the Dora Milaje fight to protect their nation from intervening world powers in the wake of King T’Challa’s death.  As the Wakandans strive to embrace their next chapter, the heroes must band together with the help of War Dog Nakia and Everett Ross and forge a new path for the kingdom of Wakanda.",
       "watchlist_ID": 1,
       "id": 7
-    },
-    {
-      "title": "Spirited Away",
-      "poster_path": "/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
-      "overview": "A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.",
-      "watchlist_ID": 2,
-      "id": 8
-    },
-    {
-      "title": "The Whale",
-      "poster_path": "/jQ0gylJMxWSL490sy0RrPj1Lj7e.jpg",
-      "overview": "A reclusive English teacher suffering from severe obesity attempts to reconnect with his estranged teenage daughter for one last chance at redemption.",
-      "watchlist_ID": 2,
-      "id": 9
-    },
-    {
-      "title": "Magic Mike's Last Dance",
-      "poster_path": "/5C9rerMqV1X0jnRdbbsM1BswVI2.jpg",
-      "overview": "Mike Lane takes to the stage again after a lengthy hiatus, following a business deal that went bust, leaving him broke and taking bartender gigs in Florida. For what he hopes will be one last hurrah, Mike heads to London with a wealthy socialite who lures him with an offer he can’t refuse… and an agenda all her own. With everything on the line, once Mike discovers what she truly has in mind, will he—and the roster of hot new dancers he’ll have to whip into shape—be able to pull it off?",
-      "watchlist_ID": 2,
-      "id": 10
-    },
-    {
-      "title": "Love at First Kiss",
-      "poster_path": "/jefnbOGaDQTwY3dATmaiIuNwARs.jpg",
-      "overview": "The story of Javier who, at the age of 16, while kissing a girl for the first time, realized that he had a gift of romantic clairvoyance. Javier can see the future... and he finally knows who the love of his life is.",
-      "watchlist_ID": 2,
-      "id": 11
     }
   ]
 }

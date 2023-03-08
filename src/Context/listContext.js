@@ -1,7 +1,7 @@
 import React, {createContext, useEffect, useState} from 'react'
 
   const  listContext = createContext() 
-// GET /posts?title=json-server&author=typicode
+
 function Provider({ children }) {
     const [movies, setMovies] = useState([])
     const [watchLists, setWatchLists] = useState([])

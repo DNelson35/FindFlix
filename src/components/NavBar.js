@@ -8,7 +8,7 @@ function NavBar() {
   const { watchLists, handleSelectedList, currList } = useListContext()
 
   const WatchListOptions = watchLists.map(watchList => <option key={watchList.id} value={watchList.id}>{watchList.author}: {watchList.label}</option> )
-// TODO: rename to on selected
+
   const handleChange = (e) => {
     handleSelectedList(e.target.value)
   };
