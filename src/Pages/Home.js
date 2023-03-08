@@ -13,7 +13,11 @@ function Home() {
   const {trending, topRated, newMovies, upcomingMovies, isLoading} = useFetchData()
   
   return (
-    isLoading? <div><h1>Loading......</h1></div> :
+    isLoading? 
+    <div className='flex h-screen w-full justify-center items-center bg-zinc-900'>
+      <h1 className='text-white text-5xl'>Loading......</h1>
+    </div> 
+    :
     <div>
       {(movies.length > 0) && <Category movies={movies} title="collection" />}
       <Category movies={trending} title='Trending Today'/>

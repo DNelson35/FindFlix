@@ -2,29 +2,27 @@
   "watchLists": [
     {
       "author": "Damien",
-      "label": "new  movie",
+      "label": "action movies",
       "id": 1
+    },
+    {
+      "author": "timmy",
+      "label": "adventure ",
+      "id": 2
     }
   ],
   "movies": [
     {
-      "title": "The Shawshank Redemption",
-      "poster_path": "/hBcY0fE9pfXzvVaY4GKarweriG2.jpg",
-      "overview": "Framed in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
+      "title": "Scream VI",
+      "poster_path": "/t2NEaFrNFRCrBIyAETlz5sqq15H.jpg",
+      "overview": "Following the latest Ghostface killings, the four survivors leave Woodsboro behind and start a fresh chapter.",
       "watchlist_ID": 1,
-      "id": 1
+      "id": 4
     },
     {
       "title": "Creed III",
       "poster_path": "/cvsXj3I9Q2iyyIo95AecSd1tad7.jpg",
       "overview": "After dominating the boxing world, Adonis Creed has been thriving in both his career and family life. When a childhood friend and former boxing prodigy, Damien Anderson, resurfaces after serving a long sentence in prison, he is eager to prove that he deserves his shot in the ring. The face-off between former friends is more than just a fight. To settle the score, Adonis must put his future on the line to battle Damien - a fighter who has nothing to lose.",
-      "watchlist_ID": 1,
-      "id": 4
-    },
-    {
-      "title": "Sayen",
-      "poster_path": "/aCy61aU7BMG7SfhkaAaasS0KzUO.jpg",
-      "overview": "Sayen is hunting down the men who murdered her grandmother. Using her training and knowledge of nature, she is able to turn the tables on them, learning of a conspiracy from a corporation that threatens her people's ancestral lands.",
       "watchlist_ID": 1,
       "id": 5
     },
@@ -33,7 +31,56 @@
       "poster_path": "/sv1xJUazXeYqALzczSZ3O6nkH75.jpg",
       "overview": "Queen Ramonda, Shuri, M’Baku, Okoye and the Dora Milaje fight to protect their nation from intervening world powers in the wake of King T’Challa’s death.  As the Wakandans strive to embrace their next chapter, the heroes must band together with the help of War Dog Nakia and Everett Ross and forge a new path for the kingdom of Wakanda.",
       "watchlist_ID": 1,
+      "id": 6
+    },
+    {
+      "title": "Avatar: The Way of Water",
+      "poster_path": "/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
+      "overview": "Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure.",
+      "watchlist_ID": 1,
       "id": 7
+    },
+    {
+      "title": "The Dark Knight",
+      "poster_path": "/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+      "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+      "watchlist_ID": 1,
+      "id": 8
+    },
+    {
+      "title": "Die Hart",
+      "poster_path": "/1EnBjTJ5utgT1OXYBZ8YwByRCzP.jpg",
+      "overview": "Follows a fictionalized version of Kevin Hart, as he tries to become an action movie star. He attends a school run by Ron Wilcox, where he attempts to learn the ropes on how to become one of the industry's most coveted action stars.",
+      "watchlist_ID": 1,
+      "id": 9
+    },
+    {
+      "title": "Forrest Gump",
+      "poster_path": "/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg",
+      "overview": "A man with a low IQ has accomplished great things in his life and been present during significant historic events—in each case, far exceeding what anyone imagined he could do. But despite all he has achieved, his one true love eludes him.",
+      "watchlist_ID": 2,
+      "id": 11
+    },
+    {
+      "title": "Puss in Boots: The Last Wish",
+      "poster_path": "/kuf6dutpsT0vSVehic3EZIqkOBt.jpg",
+      "overview": "Puss in Boots discovers that his passion for adventure has taken its toll: He has burned through eight of his nine lives, leaving him with only one life left. Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives.",
+      "watchlist_ID": 2,
+      "id": 12
+    },
+    {
+      "title": "The Woman King",
+      "poster_path": "/438QXt1E3WJWb3PqNniK0tAE5c1.jpg",
+      "overview": "The story of the Agojie, the all-female unit of warriors who protected the African Kingdom of Dahomey in the 1800s with skills and a fierceness unlike anything the world has ever seen, and General Nanisca as she trains the next generation of recruits and readies them for battle against an enemy determined to destroy their way of life.",
+      "watchlist_ID": 2,
+      "id": 13
+    },
+    {
+      "title": "The Super Mario Bros. Movie",
+      "poster_path": "/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg",
+      "overview": "After finding himself in a world known as the Mushroom Kingdom, A Brooklyn plumber Mario must travel through this world with a princess named Peach and a mushroom named Toad to find his brother Luigi and save the world from a ruthless fire-breathing monster called Bowser.",
+      "watchlist_ID": 2,
+      "id": 14
     }
   ]
 }
